@@ -1,0 +1,282 @@
+<html>
+    <head>
+
+	  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	  <meta charset="utf-8">
+    <title> E-Commerce Kisan Seva </title>
+    <!-- <link rel="stylesheet" href="Front.css"> -->
+
+    <style>
+      body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #008CBA;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h2 {
+  color: white;
+  font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ddd;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+  height: 400px;
+}
+
+nav a:active {
+  background-color: green;
+  color: white;
+}
+
+.mySlides {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+img{
+  border: 1ps solid black;
+  border-radius: 4px;
+  padding: 5px;
+  width: 120px;
+  height: 500px;
+}
+
+.img{
+  border: 1ps solid black;
+  border-radius: 4px;
+  padding: 5px;
+  width: 10px;
+  height: 100px;
+}
+
+.text {
+  color:black;
+        font-size: 70px;
+        padding: 5px 5px;
+        width: 100%;
+        text-align: center;
+}
+
+.text a {
+  color:#717171;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.text a:hover {
+  color: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  /* padding: 5px; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 12px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+    </head>
+    <body>
+
+      <header>
+        <h2><i>KISAN SEVA</i></h2>
+      </header>
+      
+      <section>
+        <nav>
+          <ul>
+            <li><a href="Front_page.html">Home Page</a></li><br>
+                <!-- <li><a href="Sign_in.html">Sign In</a></li><br>
+                <li><a href="Login.html">Log In</a></li><br> -->
+
+                
+                  
+                <div class="dropdown">
+                  <span>Categories</span>
+                  <div class="dropdown-content">
+                  <p><a href="Fruits.html">Fruits</a></p>
+                  <p><a href="Vegetable.html">Vegetables</a></p>
+                  <p><a href="Cereals.html">Cereals</a></p>
+                  <p><a href="Machineris.html">Machineris</a></p>
+                  <p><a href="Fertilisers.html">Fertilisers</a></p>
+                  <p><a href="Safety_Equ.html">Safety Equipments</a></p>
+                  <!-- <p><a href="Schemes.html">Schemes</a></p> -->
+                  </div> 
+                </div>
+
+                <li><a href="About.html">About Us</a></li>
+                <!-- <li><a href="My_cart.html">My Cart</a> </li> -->
+
+                <div class="dropdown">
+                  <span>Account</span>
+                  <div class="dropdown-content">
+                  <!-- <p><a href="registration.html">Registration</a></p> -->
+                  <p><a href="Login.html">Sign In</a></p>
+                  <!-- <p><button>Log Out</button></p> -->
+                  </div> 
+                </div><br><br>
+          </ul>
+        </nav>
+        
+        <article>
+          <div class="slideshow-container">
+        
+            <div class="mySlides fade">
+              <img src="https://images.pexels.com/photos/1128678/pexels-photo-1128678.jpeg?cs=srgb&dl=pexels-jane-doan-1128678.jpg&fm=jpg" style="width:100%"><br>
+              <div class="text"><a href="Fruits.html">Fruits</a></div>
+              
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6" style="width:100%" ><br>
+              <div class="text"><a href="Vegetable.html">Vegetables</a></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://3.imimg.com/data3/CQ/DS/MY-10721674/cereals-food-grains-500x500.jpg" style="width:100%" ><br>
+              <div class="text"><a href="Cereals.html">Cereals</a></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://media.istockphoto.com/id/874294580/photo/combine-harvesting-on-a-wheat-field.jpg?s=612x612&w=0&k=20&c=REDGF6Zq9gkcSPgliF9dg_ZjYCjFesA_4f0pZJAxX-A=" style="width:100%"><br>
+              <div class="text"><a href="Machineris.html">Machineris</a></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://ohsonline.com/-/media/ENV/eponline/Images/2017/12/shutterstock_548327224.jpg" style="width:100%" height="700" width="450"><br>
+              <div class="text"><a href="Fertilisers.html">Fertilisers</a></div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://s.alicdn.com/@sc04/kf/H6cb5a5a52e2d4b8f9af4c820afe3f75ec.png_300x300.jpg" style="width:100%" height="600" width="450"><br>
+              <div class="text"><a href="Safety_Equ.html">Safety Equipments</a></div>
+            </div>
+            
+            <!-- <div class="mySlides fade">
+                <img src="https://newindiascheme.com/wp-content/uploads/2023/02/Pardarshi-Kisan-Seva-Yojana.jpg" style="width:100%" height="650" width="450"><br>
+                <div class="text"><a href="Schemes.html">Schemes</a></div>
+              </div>         -->
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span> 
+              <span class="dot"></span>
+              <span class="dot"></span><br>
+            </div>
+            
+            <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 3000); 
+            }
+            </script>
+        </article>
+      </section>
+      
+      <!--<footer>
+        <p>Footer</p>
+      </footer>-->
+        
+        </body>
+</html>                      

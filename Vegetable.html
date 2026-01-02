@@ -1,0 +1,391 @@
+<html>
+    <head>
+        <title> E-Commerce Kisan Seva</title>
+        <!-- <link rel="Stylesheet" href="Fruits.css"> -->
+        <style>
+          body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+header {
+background-color: #4CAF50;
+color: white;
+text-align: center;
+padding: 1rem 0;
+}
+
+header h1 {
+margin: 0;
+font-size: 2rem;
+}
+
+header h2 {
+color: white;
+font-size: 48px;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin: 20px;
+}
+
+img{
+  width: 500px;
+  height: 800px;
+  border-radius: 5px;
+}
+
+nav {
+text-align: center;
+margin-bottom: 20px;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+display: flex;
+justify-content: center;
+margin-bottom: 1rem;
+}
+
+nav ul li {
+margin: 0 20px;
+}
+
+nav ul li:hover .dropdown-content {
+          display: block;
+      }
+
+nav a {
+text-decoration: none;
+          color:black;
+          font-size: 18px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+background-color: #45a049;
+}
+
+article {
+margin: 10px;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          text-align: center;
+}
+
+article img {
+width: 200px;
+          height: 200px;
+          border-radius: 5px;
+}
+
+article h2{
+margin: 0;
+margin-top: 1rem;
+}
+
+/* article .table{
+  border: 1ps solid black;
+  border-radius: 4px;
+  padding: 2px;
+  width: 350px;
+  height: 350px;
+} */
+
+/* article table{
+  width: 100%;
+  height: 40%;
+  padding: 5px;
+} */
+
+article .price {
+margin: 0;
+          font-weight: bold;
+          color: #4CAF50;
+}
+
+article button {
+background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+}
+
+article button:hover {
+background-color: #45a049;
+}
+
+.dropdown {
+position: relative;
+/* display: inline-block; */
+text-decoration: none;
+color: #333;
+font-size: 24px;
+/* padding: 5px; */
+border-radius: 5px;
+transition: background-color 0.3s ease;
+list-style-type: none;
+display: flex;
+justify-content: center;
+margin: 0 20px;
+
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 100px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+padding: 10px 12px;
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.dropdown-content a {
+          color: black;
+          text-decoration: none;
+          display: block;
+          margin-bottom: 5px;
+      }
+
+
+      .cart {
+          text-align: center;
+          padding: 10px;
+          border-top: 1px solid #ccc;
+          width: 100%;
+      }
+
+      .cart h2 {
+          margin-top: 0;
+      }
+
+      .cart-items {
+          list-style-type: none;
+          padding: 0;
+      }
+
+      .cart-item {
+          margin-bottom: 10px;
+      }
+
+      .cart-item button {
+          background-color: #f44336;
+          color: white;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 3px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+      }
+
+      .cart-item button:hover {
+          background-color: #d32f2f;
+      }
+
+      .total {
+          font-weight: bold;
+      }
+
+
+      </style>
+
+        </head>
+    <body>
+
+        <header>
+            <h1><b><i> VEGETABLES</i></b></h1>
+          </header>
+          
+          <section>
+            <nav>
+              <ul>
+                <li><a href="Front_page.html">Home Page</a></li><br>
+                    <!-- <li><a href="Sign_in.html">Sign In</a></li><br>
+                    <li><a href="Login.html">Log In</a></li><br> -->
+    
+                    
+                      
+                    <div class="dropdown">
+                      <span>Categories</span>
+                      <div class="dropdown-content">
+                      <p><a href="Fruits.html">Fruits</a></p>
+                      <p><a href="Vegetable.html">Vegetables</a></p>
+                      <p><a href="Cereals.html">Cereals</a></p>
+                      <p><a href="Machineris.html">Machineris</a></p>
+                      <p><a href="Fertilisers.html">Fertilisers</a></p>
+                      <p><a href="Safety_Equ.html">Safety Equipments</a></p>
+                      <!-- <p><a href="Schemes.html">Schemes</a></p> -->
+                      </div> 
+                    </div>
+    
+                    <li><a href="About.html">About Us</a></li>
+                    <!-- <li><a href="My_cart.html">My Cart</a> </li> -->
+
+                    <div class="dropdown">
+                      <span>Account</span>
+                      <div class="dropdown-content">
+                        <!-- <p><a href="registration.html">Registration</a></p> -->
+                        <p><a href="Login.html">Sign In</a></p>
+                        <!-- <p><button>Log Out</button></p> -->
+                        </div> 
+                    </div><br><br>
+              </ul>
+            </nav>
+            
+            <article>
+                
+                <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-2foodgroups_vegetables_detailfeature.jpg?sfvrsn=226f1bc7_6" style="width:100%"><br>
+        
+                <section>
+                  <article>
+                    <img src="https://www.jiomart.com/images/product/original/590000090/potato-1-kg-product-images-o590000090-p590000090-0-202207291750.jpg?im=Resize=(420,420)">
+                    <h2><b><i>Potato</i></b></h2>
+                    <p class="price">₹50/kg</p>                    
+                    <button onclick="addToCart('Potato', 50)">Add To Cart</button>
+                </article>
+                <article>
+                    <img src="https://zagfresh.com/wp-content/uploads/2020/06/lf4.jpg">
+                    <h2><b><i>Lady Fingers (Bhindi)</i></b></h2>
+                    <p class="price">₹50/kg</p>
+                    <button onclick="addToCart('Lady Fingers', 50)">Add To Cart</button>
+                </article>
+                <article>
+                    <img src="https://freshji.in/wp-content/uploads/2020/09/Spinach-1.jpg">
+                    <h2><b><i>Cauliflower</i></b></h2>
+                    <p class="price">₹35/unit</p>
+                    <button onclick="addToCart('Cauliflower', 35)">Add To Cart</button>
+                </article>
+                <article>
+                    <img src="https://nativepet.com/cdn/shop/articles/image3_7dc73bc8-0244-419e-a36b-8153fc316b72_x1000.jpg?v=1626101631">
+                    <h2><b><i>Tomatoes</i></b></h2>
+                    <p class="price">₹30/kg</p>
+                    <button onclick="addToCart('Tomatoes', 30)">Add To Cart</button>
+                </article>
+                <article>
+                    <img src="https://veggies.my/cdn/shop/products/BitterGourdSmall.jpg?v=1605447457">
+                    <h2><b><i>Small Bitter Gourd</i></b></h2>
+                    <p class="price">₹150</p>
+                    <button onclick="addToCart('Small Bitter Gourd', 150)">Add To Cart</button>
+                </article>
+              </section>
+              
+              <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul class="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                </ul>
+                <p class="total">Total: ₹<span id="cart-total">0.00</span></p>
+            </div>
+            
+            <div class="bottom-button-container">
+              <button class="bottom-button">Buy Now!</button>
+            </div>
+            
+            <!-- <script>
+                let cart = [];
+                let total = 0;
+            
+                function addToCart(productName, price) {
+                    cart.push({ name: productName, price: price });
+                    total += price;
+                    updateCart();
+                }
+            
+             function removeFromCart(index) {
+                    total -= cart[index].price;
+                    cart.splice(index, 1);
+                    updateCart();
+                }
+            
+                function updateCart() {
+                    let cartItemsElement = document.querySelector('.cart-items');
+                    let cartTotalElement = document.getElementById('cart-total');
+                    cartItemsElement.innerHTML = '';
+                    cart.forEach((item, index) => {
+                        let listItem = document.createElement('li');
+                        listItem.classList.add('cart-item');
+                        listItem.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+                        let removeButton = document.createElement('button');
+                        removeButton.textContent = 'Remove';
+                        removeButton.onclick = function() {
+                            removeFromCart(index);
+                        };
+                        listItem.appendChild(removeButton);
+                        cartItemsElement.appendChild(listItem);
+                    });
+                    cartTotalElement.textContent = total.toFixed(2);
+                }
+            </script> -->
+            
+            <script>
+              let cart = [];
+              let total = 0;
+            
+              function addToCart(productName, price) {
+                  cart.push({ name: productName, price: price });
+                  total += price;
+                  updateCart();
+              }
+            
+              function removeFromCart(index) {
+                  total -= cart[index].price;
+                  cart.splice(index, 1);
+                  updateCart();
+              }
+            
+              function updateCart() {
+                  let cartItemsElement = document.querySelector('.cart-items');
+                  let cartTotalElement = document.getElementById('cart-total');
+                  cartItemsElement.innerHTML = '';
+                  cart.forEach((item, index) => {
+                      let listItem = document.createElement('li');
+                      listItem.classList.add('cart-item');
+                      listItem.textContent = `${item.name} - ₹${item.price.toFixed(2)}`;
+                      let removeButton = document.createElement('button');
+                      removeButton.textContent = 'Remove';
+                      removeButton.onclick = function() {
+                          removeFromCart(index);
+                      };
+                      listItem.appendChild(removeButton);
+                      cartItemsElement.appendChild(listItem);
+                  });
+                  cartTotalElement.textContent = total.toFixed(2);
+              }
+            
+              // Function to handle "Buy Now" button click
+              function buyNow() {
+                  if (cart.length > 0) {
+                      alert("Thank you for your purchase! Your items will be shipped soon.");
+                      // Reset cart and total after purchase
+                      cart = [];
+                      total = 0;
+                      updateCart();
+                  } else {
+                      alert("Your cart is empty. Please add items before proceeding.");
+                  }
+              }
+            
+              // Add event listener to the "Buy Now" button
+              document.querySelector('.bottom-button').addEventListener('click', buyNow);
+            </script>
+            
+                    
+                </body>
+            </html>

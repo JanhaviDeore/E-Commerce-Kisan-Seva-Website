@@ -1,0 +1,257 @@
+<html>
+    <head>
+        <title> E-Commerce Kisan Seva</title>
+        <!-- <link rel="Stylesheet" href="Safety_Equ.css"> -->
+        <style>
+            body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+} */
+
+nav {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+article {
+  flex: 1 1 33.333%;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+article img {
+  width: 100%;
+  height: 70%;
+}
+
+article h2{
+  margin: 0;
+  margin-top: 1rem;
+}
+
+article .table{
+    border: 1ps solid black;
+    border-radius: 4px;
+    padding: 2px;
+    width: 350px;
+    height: 350px;
+}
+
+article table{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+}
+
+article .price {
+  margin: 0;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+article button {
+  display: block;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+article button:hover {
+  background-color:darkslateblue;
+}
+
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  /* padding: 5px; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 12px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        </style>
+        </head>
+    <body>
+
+        <header>
+            <h1><b><i>Schemes </i></b></h1>
+          </header>
+          
+          <section>
+            <nav>
+              <ul>
+                <li><a href="Front_page.html">Home Page</a></li><br>
+                    <!-- <li><a href="Sign_in.html">Sign In</a></li><br>
+                    <li><a href="Login.html">Log In</a></li><br> -->
+    
+                    <div class="dropdown">
+                      <span>Account</span>
+                      <div class="dropdown-content">
+                      <p><a href="registration.html">Registration</a></p>
+                      <p><a href="Login.html">Log In</a></p>
+                      <p><button>Log Out</button></p>
+                      </div> 
+                    </div><br><br>
+                      
+                    <div class="dropdown">
+                      <span>Categories</span>
+                      <div class="dropdown-content">
+                      <p><a href="Fruits.html">Fruits</a></p>
+                      <p><a href="Vegetable.html">Vegetables</a></p>
+                      <p><a href="Cereals.html">Cereals</a></p>
+                      <p><a href="Machineris.html">Machineris</a></p>
+                      <p><a href="Fertilisers.html">Fertilisers</a></p>
+                      <p><a href="Safety_Equ.html">Safety Equipments</a></p>
+                      <p><a href="Schemes.html">Schemes</a></p>
+                      </div> 
+                    </div>
+    
+                    <li><a href="About.html">About Us</a></li>
+                    <li><a href="My_cart.html">My Cart</a> </li>
+              </ul>
+            </nav>
+            
+            <article>
+                
+                <img src="https://s.alicdn.com/@sc04/kf/H6cb5a5a52e2d4b8f9af4c820afe3f75ec.png_300x300.jpg" style="width:100%" height="600" width="450"><br>
+                
+        
+                <table border="2px">
+                    <tr>
+                        <td>
+                            <img class="table" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7WE9TcEy7BJjMgxMQkKtsw00MWkR5tgymatevYug0A&s">
+                            <h3><b><i><a href="https://grahaksevakendra.in/pm-kisan-yojna/#:~:text=PM%20KISAN%20Yojna%20is%20a,their%20expenses%20related%20to%20farming."> PM Kisan Yojna - Grahak Seva Kendra</a></i></b></h3>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹ 500</p>
+                            <!--<button>Buy Now</button>-->
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://makerbazar.in/cdn/shop/products/GARDENGENIEGLOVES_800x.webp?v=1663849843">
+                            <h2><b><i>Gloves</i></b></h2>
+                            <p class="price">30% Discount</p>
+                            <p class="price">₹ 200</p>
+                            <!--<button>Buy Now</button>-->
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://1.bp.blogspot.com/-Z4Oo2Jfi7zg/VumZ1tUa0PI/AAAAAAAAANc/_kCiamnaAIgOoXl5i3l61DL1GRY5NLtWw/s1600/eye%2Bprotection.jpg">
+                            <h2><b><i>Eye Protection</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹ 100</p>
+                            <!--<button>Buy Now</button>-->
+                            <button>Add To Cart</button>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <img class="table" src="https://www.daera-ni.gov.uk/sites/default/files/images/daera/news/first%20aid%20kit%20photo%20%28full%20size%29.jpg">
+                            <h2><b><i>First Aid Kit</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹ 600</p>
+                            <!--<button>Buy Now</button>-->
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://www.robustt.in/cdn/shop/files/1_3dd5f1a9-e46e-49d5-96b2-3bd36595a3bd_533x.jpg?v=1694852072">
+                            <h2><b><i>Head Protection</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹ 400</p>
+                            <!--<button>Buy Now</button>-->
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://www.safeopedia.com/wp-content/uploads/2023/07/human-people-person-blossom-flora-flower-mimosa-plant-garden-gardener.jpg">
+                            <h2><b><i>Body Protection</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹ 450</p>
+                            <!--<button>Buy Now</button>-->
+                            <button>Add To Cart</button>
+                        </td>
+                    </tr>
+                </table>
+          </section>
+          
+          <!-- <footer>
+            <p>Footer</p>
+          </footer> -->
+
+        
+        
+        
+    </body>
+</html>
+
+<!-- PM KISAN Yojna is a scheme launched by the government of India to provide financial assistance to small and marginal farmers. Under this scheme, eligible farmers receive Rs. 6000 per year in three installments. This scheme aims to provide support to farmers and help them meet their expenses related to farming. -->

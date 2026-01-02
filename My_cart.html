@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title> E-Commerce Kisan Seva</title>
+        <!-- <link rel="Stylesheet" href="Fruits.css"> -->
+        <style>
+            body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* section {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2rem;
+} */
+
+nav {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #eee;
+}
+
+article {
+  flex: 1 1 33.333%;
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+article img {
+  width: 100%;
+  height: 70%;
+}
+
+article h2{
+  margin: 0;
+  margin-top: 1rem;
+}
+
+article .table{
+    border: 1ps solid black;
+    border-radius: 4px;
+    padding: 2px;
+    width: 350px;
+    height: 350px;
+}
+
+article table{
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+}
+
+article .price {
+  margin: 0;
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+article button {
+  display: block;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+article button:hover {
+  background-color:darkslateblue;
+}
+
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  /* padding: 5px; */
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 10px 12px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        </style>
+
+        </head>
+    <body>
+
+        <header>
+            <h1><b><i> My Cart </i></b></h1>
+          </header>
+          
+          <section>
+            <nav>
+              <ul>
+                <li><a href="Front_page.html">Home Page</a></li><br>
+                <!-- <li><a href="Sign_in.html">Sign In</a></li><br>
+                <li><a href="Login.html">Log In</a></li><br> -->
+
+                <div class="dropdown">
+                  <span>Account</span>
+                  <div class="dropdown-content">
+                    <!-- <p><a href="registration.html">Registration</a></p> -->
+                    <p><a href="Login.html">Sign In</a></p>
+                    <!-- <p><button>Log Out</button></p> -->
+                    </div> 
+                </div><br><br>
+                  
+                <div class="dropdown">
+                  <span>Categories</span>
+                  <div class="dropdown-content">
+                  <p><a href="Fruits.html">Fruits</a></p>
+                  <p><a href="Vegetable.html">Vegetables</a></p>
+                  <p><a href="Cereals.html">Cereals</a></p>
+                  <p><a href="Machineris.html">Machineris</a></p>
+                  <p><a href="Fertilisers.html">Fertilisers</a></p>
+                  <p><a href="Safety_Equ.html">Safety Equipments</a></p>
+                  <!-- <p><a href="Schemes.html">Schemes</a></p> -->
+                  </div> 
+                </div>
+
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="My_cart.html">My Cart</a> </li>
+              </ul>
+              </ul>
+            </nav>
+            
+            <!-- <article>
+                
+                <img src="https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/general-nutrition-wellness/2-2-2-3foodgroups_fruits_detailfeature.jpg?sfvrsn=64942d53_4" style="width:100%"><br>
+                
+
+        
+                <table border="2px">
+                    <tr>
+                        <td>
+                            <img class="table" src="https://media.istockphoto.com/id/911274308/photo/mango-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=HGg_0OGyxMU6yL0gtKAKkffYa-cLG8WlwcG5nTzzCQU=">
+                            <h2><b><i>Mangos</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹250/kg</p>                           
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://www.foodbox.co.nz/cdn/shop/products/BA-2_a8a018ca-4738-4854-ba32-c9f07ea5c9e8.jpg?v=1679869850">
+                            <h2><b><i>Bananas</i></b></h2>
+                            <p class="price">30% Discount</p>
+                            <p class="price">₹50/Dozen</p>                            
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://media.istockphoto.com/id/186843005/photo/red-apple.jpg?b=1&s=612x612&w=0&k=20&c=HrOSLAubZ3FPFEOF83fP9lIXe_ztNa9rhHIfCz8QHIU=">
+                            <h2><b><i>Apples</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹200/kg</p>
+                            <button>Add To Cart</button>
+                        </td>
+                    </tr>
+        
+                    <tr>
+                        <td>
+                            <img class="table" src="https://i0.wp.com/jeufzone.com/wp-content/uploads/2018/09/pasteque.jpg?fit=500%2C500&ssl=1">
+                            <h2><b><i>Watermellon</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹120/unit</p>
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://t3.ftcdn.net/jpg/06/01/63/28/360_F_601632857_3UTi1yh3Ou9O0eOzJN2y5z4Tzlvo6zoS.jpg">
+                            <h2><b><i>Papaya</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹50/unit</p>
+                            <button>Add To Cart</button>
+                        </td>
+                        <td>
+                            <img class="table" src="https://img.freepik.com/free-vector/realistic-fruits-composition-with-images-whole-sliced-kiwi-fruit-blank-background-vector-illustration_1284-66048.jpg">
+                            <h2><b><i>Kiwi</i></b></h2>
+                            <p class="price">50% Discount</p>
+                            <p class="price">₹150</p>
+                            <button>Add To Cart</button>
+                        </td>
+                    </tr>
+                </table>
+          </section> -->
+          
+          <!-- <footer>
+            <p>Footer</p>
+          </footer> -->
+
+        
+        
+        
+    </body>
+</html>

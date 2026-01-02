@@ -1,0 +1,190 @@
+<html>
+  <head>
+    <title>E-Commerce Kisan Seva</title>
+    <style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 500px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="registration.php" method="post">
+    <div class="container">
+      <h1><i><u>Registration</u></i></h1>
+      
+        <label for="firstName"><i><b>First Name:</b></i></label>
+        <input type="text" id="firstName" name="firstname" placeholder="Enter First Name" required><br>
+        <label for="lastName"><i><b>Last Name:</b></i></label>
+        <input type="text" id="lastName" name="lastname" placeholder="Enter Last Name" required><br>
+        <label for="email"><i><b>Email:<b></i></label>
+        <input type="email" id="email" name="email" placeholder="Enter E-mail " required><br>
+        <label for="pwd"><i><b>Password:<b></i></label>
+        <input type="password" id="pwd" name="password" placeholder="Enter Password" required><br>
+
+        <label for="cp"><i><b>Confirm Password:</b></i></label>
+        <input type="Password" id="cp" name="conpassword" placeholder="Enter Confirm Password" required><br>
+
+        <input type="submit" value="Sign In"><br><br>
+        <input type="reset" value="Clear">
+      
+    </div>
+  </form>
+  </body>
+</html>
+
+
+
+ <!-- <html>
+  <head>
+    <title>E-Commerce Kisan Seva</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <style>
+    /* * {
+        box-sizing: border-box;
+    } */
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .container {
+        width: 500px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body ng-app="myApp" ng-controller="myController">
+    <form name="form" action="registration.php" method="post" ng-submit="validateForm(form)">
+
+    <div class="container">
+      <h1><i><u>Registration</u></i></h1>
+      
+        <label="email"><i><b>Email:<b></i></label>
+        <input type="email" id="email" name="email" placeholder="Enter E-mail " ng-model="email" required><br>
+        <label for="pwd"><i><b>Password:<b></i></label>
+        <input type="password" id="p" name="password" placeholder="Enter Password" ng-model="password" required><br>
+
+        <label for="cp"><i><b>Confirm Password:</b></i></label>
+        <input type="Password" id="cp" name="conpassword" placeholder="Enter Confirm Password" ng-model="confirmPassword" required><br>
+
+        <input type="submit" value="Sign In"><br><br>
+        <input type="reset" value="Clear">
+      
+    </div>
+  </body>
+  <script>
+    var app = angular.module('myApp', []);
+app.controller('myController', function($scope, $http) {
+  $scope.validateForm = function(form) {
+    if (form.$valid) {
+      // Form is valid, submit the form
+      $http.post('registration.php', form).then(function(response) {
+        // Handle the response from the server
+        console.log(response.data);
+      }, function(error) {
+        // Handle the error
+        console.log(error);
+      });
+    }
+  };
+});
+  </script>
+</html> -->
